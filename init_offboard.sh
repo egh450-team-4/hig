@@ -1,8 +1,10 @@
 #!/bin/sh
+# This script should be executed
+# on the offobard computer at startup
 git fetch --all
 git reset --hard origin/master
 npm install
-# Setup offboard computer
+IP=$(node hig.js)
 disros() {
   # Setup for distributed ROS
   export ROS_IP="$(hostname -I | cut -d' ' -f1)"
