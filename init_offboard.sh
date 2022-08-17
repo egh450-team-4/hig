@@ -2,13 +2,6 @@
 git fetch --all
 git reset --hard origin/master
 npm install
-# This script should be executed
-# on the offobard computer at startup
-IP=$(node hig.js)
-USERNAME="uavteam4"
-echo "Enter the password (1234)";
-# Asks the onboard computer to run the init procedure
-ssh $USERNAME@$IP sh /home/uavteam4/hig/init_onboard.sh
 # Setup offboard computer
 disros() {
   # Setup for distributed ROS
@@ -21,5 +14,5 @@ disros() {
   fi
 }
 disros $IP;
-#rqt &
+rqt &
 echo "done"

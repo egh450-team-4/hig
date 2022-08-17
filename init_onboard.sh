@@ -3,11 +3,16 @@
 # on the onboard computer at startup
 cd ~/hig && git fetch --all && git reset --hard origin/master;
 cd ~;
-PATH="/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin";
-echo "1";
-echo "PATH IS $PATH";
-echo $PATH;
-echo "2";
+disros() {
+  # Setup for distributed ROS
+  export ROS_IP="$(hostname -I | cut -d' ' -f1)"
+  echo "Identifying as: $ROS_IP"
+  if [ "$#" -eq 1 ]
+  then
+    export ROS_MASTER_URI="http://$1:11311"
+    echo "Connecting to: $ROS_MASTER_URI"
+  fi
+}
 disros
 sleep 1;
 echo "[onboard] running roscore"
