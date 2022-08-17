@@ -16,10 +16,10 @@ disros() {
 }
 disros
 sleep 1;
-roscore &
+/opt/ros/noetic/bin/roscore &
 sleep 10;
-roslaunch qutas_lab_450 environment.launch &
+/opt/ros/noetic/bin/roslaunch qutas_lab_450 environment.launch &
 sleep 10;
-roslaunch ~/catkin_ws/launch/control.launch &
+/opt/ros/noetic/bin/roslaunch ~/catkin_ws/launch/control.launch &
 sleep 1;
-rosrun depthai_publisher dai_publisher &
+/opt/ros/noetic/bin/rosrun depthai_publisher dai_publisher &
