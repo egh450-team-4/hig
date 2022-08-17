@@ -1,5 +1,4 @@
 #!/bin/sh
-. ./home/uavteam4/.bashrc
 # This script should be executed
 # on the onboard computer at startup
 cd ~/hig && git reset --hard origin/master
