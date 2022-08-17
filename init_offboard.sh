@@ -1,3 +1,5 @@
+git fetch --all
+git reset --hard origin/master
 npm install
 # This script should be executed
 # on the offobard computer at startup
