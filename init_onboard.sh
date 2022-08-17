@@ -1,3 +1,5 @@
+cd ~/hig && git reset --hard origin/master
+cd ~
 disros() {
   # Setup for distributed ROS
   export ROS_IP="$(hostname -I | cut -d' ' -f1)"
