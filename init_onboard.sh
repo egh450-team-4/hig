@@ -3,6 +3,7 @@
 # on the onboard computer at startup
 cd ~/hig && git fetch --all && git reset --hard origin/master
 cd ~
+echo "PATH IS $PATH";
 disros
 sleep 1;
 roscore &
