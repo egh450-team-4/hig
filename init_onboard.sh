@@ -13,9 +13,10 @@ disros() {
     echo "Connecting to: $ROS_MASTER_URI"
   fi
 }
+echo "[onboard] running disros";
 disros
 sleep 1;
-echo "[onboard] running roscore"
+echo "[onboard] running roscore";
 roscore &
 sleep 10;
 echo "[onboard] running roslaunch qutas_lab_450";
@@ -26,3 +27,4 @@ roslaunch ~/catkin_ws/launch/control.launch &
 sleep 1;
 echo "[onboard] running depthai_publisher";
 rosrun depthai_publisher dai_publisher &
+echo "[onboard] DONE";

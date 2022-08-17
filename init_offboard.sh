@@ -15,6 +15,8 @@ disros() {
     echo "Connecting to: $ROS_MASTER_URI"
   fi
 }
+echo "[offboard] running disros";
 disros $IP;
+echo "[offboard] running rqt";
 rqt &
-echo "done"
+echo "[offboard] DONE";
