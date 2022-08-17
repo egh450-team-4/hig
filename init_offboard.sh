@@ -1,3 +1,4 @@
+npm install
 # This script should be executed
 # on the offobard computer at startup
 IP=$(node hig.js)
