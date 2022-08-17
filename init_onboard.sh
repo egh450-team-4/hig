@@ -1,6 +1,16 @@
+disros() {
+  # Setup for distributed ROS
+  export ROS_IP="$(hostname -I | cut -d' ' -f1)"
+  echo "Identifying as: $ROS_IP"
+  if [ "$#" -eq 1 ]
+  then
+    export ROS_MASTER_URI="http://$1:11311"
+    echo "Connecting to: $ROS_MASTER_URI"
+  fi
+}
 # This script should be executed
 # on the onboard computer at startup
-disros &
+disros
 sleep 1;
 roscore &
 sleep 10;
