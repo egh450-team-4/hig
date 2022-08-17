@@ -1,3 +1,5 @@
+# This script should be executed
+# on the onboard computer at startup
 cd ~/hig && git reset --hard origin/master
 cd ~
 disros() {
@@ -10,8 +12,6 @@ disros() {
     echo "Connecting to: $ROS_MASTER_URI"
   fi
 }
-# This script should be executed
-# on the onboard computer at startup
 disros
 sleep 1;
 roscore &
