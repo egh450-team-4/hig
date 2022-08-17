@@ -3,6 +3,8 @@
 # on the onboard computer at startup
 cd ~/hig && git fetch --all && git reset --hard origin/master
 cd ~
+# Should be the same as source .bashrc but works
+eval "$(cat ~/.bashrc | tail -n +10)"
 disros() {
   # Setup for distributed ROS
   export ROS_IP="$(hostname -I | cut -d' ' -f1)"
