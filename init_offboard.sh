@@ -21,5 +21,5 @@ disros() {
   fi
 }
 disros $IP;
-rqt &
+#rqt &
 echo "done"

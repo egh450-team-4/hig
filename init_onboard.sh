@@ -3,6 +3,7 @@
 # on the onboard computer at startup
 cd ~/hig && git fetch --all && git reset --hard origin/master;
 cd ~;
+PATH="/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin";
 echo "1";
 echo "PATH IS $PATH";
 echo $PATH;
