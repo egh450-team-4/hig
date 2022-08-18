@@ -1,4 +1,4 @@
-1. Open two terminal windows
+1. Open two terminal windows (press CTRL + ALT + T twice)
 2. In the first terminal window, setup the onboard computer. Run:
   sh hig/ssh_onboard.sh
   1234
