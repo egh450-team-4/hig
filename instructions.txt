@@ -1,10 +1,7 @@
 1. Open two terminal windows
 2. In the first terminal window, setup the onboard computer. Run:
-  ssh uavteam4@THE_ONBOARD_IP (get the ip from https://hindenburg.rfy.nz)
-  cd hig
-  git pull
-  sh init_onboard.sh
+  sh hig/ssh_onboard.sh
+  1234
+  sh hig/init_onboard.sh
 3. In the second terminal window, setup the offboard computer. Run:
-  cd hig
-  git pull
-  sh init_offboard.sh
+  sh hig/init_offboard.sh
