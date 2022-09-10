@@ -24,4 +24,6 @@ roslaunch ~/catkin_ws/launch/control.launch &
 sleep 1;
 echo "[onboard] running depthai_publisher";
 rosrun depthai_publisher dai_publisher &
+echo "[onboard] running aruco_subscriber";
+rosrun depthai_publisher aruco_subscriber &
 echo "[onboard] DONE";
