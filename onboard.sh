@@ -26,4 +26,6 @@ echo "[onboard] running depthai_publisher";
 rosrun depthai_publisher dai_publisher &
 echo "[onboard] running aruco_subscriber";
 rosrun depthai_publisher aruco_subscriber &
+echo "[onboard] launching breadcrumb";
+roslaunch ~/catkin_ws/launch/breadcrumb.launch &
 echo "[onboard] DONE";
