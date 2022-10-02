@@ -16,6 +16,9 @@ sleep 1;
 echo "[onboard] running roscore";
 roscore &
 sleep 5;
+echo "[onboard] running roslaunch qutas_lab_450";
+roslaunch qutas_lab_450 environment.launch &
+sleep 5;
 echo "[onboard] running emulator";
 roslaunch spar_node spar_uavasr.launch &
 sleep 5;
