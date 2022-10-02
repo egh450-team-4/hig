@@ -17,7 +17,7 @@ echo "[onboard] running roscore";
 roscore &
 sleep 5;
 echo "[onboard] running emulator";
-roslaunch spar_node spar_uavasr.launch
+roslaunch spar_node spar_uavasr.launch &
 sleep 5;
 echo "[onboard] running depthai_publisher";
 rosrun depthai_publisher dai_publisher &
