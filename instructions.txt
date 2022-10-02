@@ -6,5 +6,8 @@
 3. In the second terminal window, setup the offboard computer. Run:
   sh hig/init_offboard.sh
   
+    
 Etc:
 disros $(node ~/hig/hig.js)
+
+IF USING EMULATOR, RUN INSTEAD: sh hig/init_onboard_emulator.sh IN STEP 2.
