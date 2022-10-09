@@ -27,7 +27,7 @@ rosrun depthai_publisher dai_publisher &
 echo "[onboard] running aruco_subscriber";
 rosrun depthai_publisher aruco_subscriber &
 echo "[onboard] running payload node"
-rosrun node_payload src/payload_node.py &
+rosrun node_payload src/payload.py &
 echo "[onboard] launching breadcrumb";
 roslaunch ~/catkin_ws/launch/breadcrumb.launch &
 echo "[onboard] DONE";
