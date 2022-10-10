@@ -22,10 +22,8 @@ sleep 10;
 echo "[onboard] running catkin's control.launch";
 roslaunch ~/catkin_ws/launch/control.launch &
 sleep 1;
-echo "[onboard] running depthai_publisher";
-rosrun depthai_publisher dai_publisher &
-echo "[onboard] running aruco_subscriber";
-rosrun depthai_publisher aruco_subscriber &
+echo "[onboard] running image node";
+rosrun node_image image.py &
 echo "[onboard] running payload node"
 rosrun node_payload src/payload.py &
 echo "[onboard] launching breadcrumb";
