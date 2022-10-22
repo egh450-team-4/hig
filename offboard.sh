@@ -17,6 +17,8 @@ echo "[offboard] running rqt";
 rqt &
 echo "[offboard] running custom marker";
 rosrun node_opi cusmarker.py &
+echo "[offboard] running pose tracker";
+rosrun node_opi posetracker.py &
 echo "[offboard] running espeaker";
 rosrun node_opi espeaker.py &
 echo "[offboard] DONE";
